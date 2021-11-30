@@ -3,10 +3,10 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 
 export default function MenuButton(props) {
-  const { item } = props
+  const { item, ...rest } = props
 
   return (
-    <Link to={item.link}>
+    <Link to={item.link} {...rest}>
       <MenuItem title={item.title}>
         <img src={item.icon} alt={item.title} />
         {item.title}

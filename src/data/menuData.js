@@ -1,4 +1,4 @@
-const menuData = [
+export const menuData = [
   { title: "Courses", icon: "/images/icons/courses.svg", link: "/courses" },
   {
     title: "Tutorials",
@@ -10,4 +10,8 @@ const menuData = [
   { title: "", icon: "/images/icons/account.svg", link: "/account" },
 ]
 
-export default menuData
+export const tooltipData = [
+  { title: "Profile", icon: "/images/icons/profile.svg", link: "/profile" },
+  { title: "Settings", icon: "/images/icons/settings.svg", link: "/search" },
+  { title: "Sign out", icon: "/images/icons/signout.svg", link: "/logout" },
+]
