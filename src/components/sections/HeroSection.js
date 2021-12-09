@@ -14,7 +14,7 @@ export default function HeroSection() {
       <ContentWrapper>
         <TextWrapper>
           <Title>
-            Design <br /> and code React apps
+            Design <br /> and code <span>React</span> apps
           </Title>
           <Description>
             Don’t skip design. Learn design and code, by building real apps with
@@ -74,6 +74,18 @@ const TextWrapper = styled.div`
 
 const Title = styled(H1)`
   color: ${themes.dark.text1};
+  background: linear-gradient(180deg, #730040 0%, #301cbe 100%);
+  color: transparent;
+
+  span {
+    background: linear-gradient(180deg, #ffd7ff 0%, #ffb6ff 100%);
+  }
+
+  &,
+  & > span {
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
 `
 
 const Description = styled(MediumText)``
