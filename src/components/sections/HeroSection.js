@@ -14,7 +14,7 @@ export default function HeroSection() {
       <ContentWrapper>
         <TextWrapper>
           <Title>
-            Design <br /> and code <span>React</span> apps
+            Design <br /> and code <br /> <span>React</span> apps
           </Title>
           <Description>
             Don’t skip design. Learn design and code, by building real apps with
@@ -47,6 +47,12 @@ const ContentWrapper = styled.div`
   padding: 130px 30px;
   display: grid;
   grid-template-columns: 360px auto;
+
+  @media (max-width: 450px) {
+    grid-template-columns: auto;
+    gap: 60px;
+    padding: 150px 20px 250px;
+  }
 `
 
 const TextWrapper = styled.div`
@@ -85,6 +91,10 @@ const Title = styled(H1)`
   & > span {
     background-clip: text;
     -webkit-background-clip: text;
+  }
+
+  @media (max-width: 450px) {
+    font-size: 48px;
   }
 `
 
